@@ -8,7 +8,6 @@ use \yii\db\ActiveRecord;
 use yii\db\Expression;
 use yii\db\Query;
 use yii\helpers\ArrayHelper;
-use yii\helpers\VarDumper;
 
 /**
  * This is the model class for table "book".
@@ -22,7 +21,7 @@ use yii\helpers\VarDumper;
  */
 class Book extends ActiveRecord
 {
-    public $authors;
+    public $authors = [];
 
     public function behaviors()
     {
