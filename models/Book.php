@@ -111,7 +111,7 @@ class Book extends ActiveRecord
             ->where([
                 'book_id' => $this->id,
             ])
-            ->column();
+            ->column() ?: [];
         parent::afterFind();
     }
 
